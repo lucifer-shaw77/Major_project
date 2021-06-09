@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Type" content="text/html">
+  <title>Registration Form</title>
+  <meta name="author" content="Jake Rocheleau">
+  <link rel="shortcut icon" href="http://static.tmimgcdn.com/img/favicon.ico">
+  <link rel="icon" href="http://static.tmimgcdn.com/img/favicon.ico">
+  <link rel="stylesheet" type="text/css" media="all" href="Registration Page/css/styles.css">
+  <link rel="stylesheet" type="text/css" media="all" href="Registration Page/css/switchery.min.css">
+  <script type="text/javascript" src="Registration Page/js/switchery.min.js"></script>
+  <style type="text/css">
+    
+    body{
+
+      background-image: url('Registration Page/Car.jpg');
+       
+    }
+
+  </style>
+</head>
+
+<body>
+  <div id="wrapper">
+  
+  <h1>Registration Form</h1>
+  
+  <form onsubmit="return false">
+  <div class="col-2">
+    <label style="color:red;">
+      Name
+      <input placeholder="What is your full name?" id="name" name="name" tabindex="1">
+    </label>
+  </div>
+  <div class="col-2">
+    <label style="color:red;">
+      Address
+      <input placeholder="What is your Full Address?" id="Address" name="Address" tabindex="2">
+    </label>
+  </div>
+  <div class="col-3">
+    <label style="color:red;">
+      City
+      <select tabindex="3">
+        <option>None</option>
+	<option>Kolkata</option>
+        <option>Mumbai</option>
+        <option>Chennai</option>
+      </select>
+    </label>
+  </div>
+  <div class="col-3">
+    <label style="color:red;">
+      Phone Number
+      <input placeholder="What is the best # to reach you?" id="phone" name="phone" tabindex="4">
+    </label>
+  </div>
+  <div class="col-3">
+    <label style="color:red;">
+      Email
+      <input placeholder="What is your e-mail address?" id="email" name="email" tabindex="5">
+    </label>
+  </div>
+ <div class="col-3">
+    <label style="color:red;">
+      Driving License No.
+      <input placeholder="What is your Driving License No.?" id="License No." name="License No." tabindex="6">
+    </label>
+  </div>  
+
+  <div class="col-4">
+    <label style="color:red;">
+      Aadhar card no.
+      <input placeholder="Give your Aadhar card no." id="Aadhar card no." name="Aadhar card no." tabindex="7">
+    </label>
+  </div>
+  <div class="col-4">
+    <label style="color:red;">
+      Gender
+      <select tabindex="8">
+	<option>Male</option>
+        <option>Female</option>
+      </select>
+    </label>
+  </div>
+ <div class="col-4">
+    <label style="color:red;">
+      Login as
+      <select tabindex="9">
+	<option>Dealer</option>
+        <option>Consumer</option>
+      </select>
+    </label>
+  </div>
+ <div class="col-4">
+    <label style="color:red;">
+	   New Password
+           <input placeholder="What is your New Password" id="New Password" name="New Password" tabindex="6">
+           
+      </label>
+  </div>  
+  <div class="col-4">
+    <label style="color:red;">
+	  Confirm Password
+           <input placeholder="Confirm your Password" id="Confirm Password" name="Confirm Password" tabindex="6">
+           
+      </label>
+  </div> 
+  <div class="col-submit">
+    <button class="submitbtn">Register</button>
+  </div>
+  </form>
+  </div>
+<script type="text/javascript">
+var elems = Array.prototype.slice.call(document.querySelectorAll('.js-switch'));
+
+elems.forEach(function(html) {
+  var switchery = new Switchery(html);
+});
+</script>
+</body>
+</html>
